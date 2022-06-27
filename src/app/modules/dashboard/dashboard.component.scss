@@ -1,0 +1,77 @@
+mat-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+    border-radius: 15px;
+}
+
+// mat-card:hover {
+//     transform: translateY(-10px);
+//     transition: all 0.5s;
+//     cursor: pointer;
+// }
+.amount {
+    // box-shadow: rgb(255, 165, 0) 0px 18px 50px -10px !important;
+    box-shadow: rgb(255, 204, 108) 0px 10px 50px !important;
+}
+
+.email {
+    // box-shadow: rgb(247, 121, 121) 0px 18px 50px -10px !important;
+    box-shadow: rgb(255, 166, 166) 0px 10px 50px !important;
+}
+
+.clients {
+    // box-shadow: rgb(250, 117, 60) 0px 18px 50px -10px !important;
+    // box-shadow: rgb(250, 117, 60) 0px 3px 12px !important;
+    // box-shadow: rgb(250, 117, 60) 0px 4px 12px !important;
+    // box-shadow: rgb(250, 117, 60) 0px 0px 16px !important;
+    box-shadow: rgb(255, 174, 139) 0px 10px 50px !important;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+i {
+    font-size: 30px;
+    position: relative;
+    bottom: 11px;
+}
+
+.fa-envelope {
+    color: rgb(247, 121, 121);
+}
+
+.fa-rupee {
+    color: rgb(255, 165, 0);
+}
+
+.fa-group {
+    color: rgb(250, 117, 60);
+}
+
+.dashboard {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+    letter-spacing: 1.1px
+}
+
+#myChart {
+    display: block;
+    width: 100%!important;
+    height: 50% !important;
+}
+
+.myChart {
+    box-shadow: rgb(231, 178, 162) 0px 10px 50px !important;
+}
+
+.text-center {
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.8px;
+}

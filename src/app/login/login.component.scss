@@ -1,0 +1,255 @@
+mat-card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;    // box-shadow: #020007 0px 10px 40px !important;
+    top: 160px;
+    border-radius: 16px;
+    padding: 18px 28px 38px;
+}
+#sec{
+   background-color: rgba(246, 246, 246, 0.6);
+   height: 100vh;
+}
+// .main{
+//     background: url('../../assets/pawel-czerwinski-3k9PGKWt7ik-unsplash\ \(1\).jpg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     height: 67vh;
+// }
+.login {
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3) !important;
+}
+
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/marek-piwnicki-Vw608pbz7zs-unsplash.jpg');
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/69F.gif');
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;    // box-shadow: rgb(242, 208, 197) 0px 10px 50px !important;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 67vh;
+    position: relative;
+    top: 23%;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+// right: 92%
+}
+.bg:hover{
+transform: translateY(-10px); 
+transition: 0.4s;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px !important;
+}
+.btn-block {
+    background: #3cb371;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    box-shadow: rgba(11, 11, 11, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+    outline: none !important;
+}
+
+.forgot {
+    letter-spacing: 2px
+}
+
+* {
+    letter-spacing: 2px
+}
+
+// .form-control {
+//     border-radius: 18px;
+// }
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.checkbox {
+    position: relative;
+    top: 1px;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: #f31760 !important;
+}
+
+::ng-deep.mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #f31760 !important;
+}
+
+.form-control {
+    width: 146%;
+}
+
+// .container-fluid {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/pawel-czerwinski-3k9PGKWt7ik-unsplash\ \(1\).jpg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     box-shadow: rgba(11, 11, 11, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+//     height: 100vh
+// }
+
+.checkbox:checked:before {
+    background-color: green;
+}
+
+.checkbox:checked:after {
+    background-color: green;
+}
+
+.span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h4 {
+    // cursor: pointer;
+    position: relative;
+    top: 124%;
+    letter-spacing: 1.6px;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3) !important;
+
+}
+h3{
+        text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3) !important;
+
+}
+
+.sign {
+    background-color: #f31760;
+    color: white;
+    position: relative;
+    top: 186px;
+    letter-spacing: 1, 7px;
+    // border-radius: 18px;
+    outline: none;
+    width: 55%;
+
+}
+
+
+.btn {
+    position: relative;
+    top: 48px;
+    letter-spacing: 1, 7px;
+    // border-radius: 18px;
+    outline: none;
+    background-color: #f31760;
+    color: white;
+    width: 100%;
+    left: 6%;
+}
+
+hr{
+    border: 0.6px solid #f31760;
+    
+    width: 36%;
+    position: relative;
+    right: 31%;
+    bottom: 4%;
+    box-shadow: rgba(11, 11, 11, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+
+
+}
+.icon{
+    position: relative;
+    top: 74px;
+    left: 33%;
+
+}
+
+.fa-facebook{
+    color: #4267B2;
+    font-size: 28px;
+    background: white;
+    padding: 10px;
+    border-radius: 46px;
+    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3) !important;
+cursor: pointer;
+}
+
+.fa-google-plus{
+    color: #db4a39;
+    background: white;
+    padding: 10px;
+    border-radius: 46px;
+    font-size: 28px;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3) !important;
+cursor: pointer;
+    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.fa-facebook:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #4267B2;
+}
+
+.fa-google-plus:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #db4a39;
+}
+
+
+.card{
+    position:relative;left:16%;
+height: 80vh;
+top: 15%;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.form1{
+    position:relative;
+    left:20%;
+    height: 80vh;
+    top: 15%;
+    // background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+    font-size: 28px;
+    background: white;
+    padding: 10px;
+    border-radius: 46px;
+    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3) !important;
+cursor: pointer;
+}
+
+.fa-linkedin:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #0077b5;
+}
+ul{
+    display: inline-flex !important;
+    list-style: none;
+}
+
+.example-form-field {
+    margin-right: 20px;
+  }
+  
+
+
+  input[name="r.name"] {
+	accent-color: #f31760;
+}

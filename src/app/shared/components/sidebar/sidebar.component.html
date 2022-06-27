@@ -1,0 +1,65 @@
+<!-- <div class="accordion mt-5">
+
+    <div>
+        
+
+        <div class="div">
+
+            <img class="url img-responsive" [src]="url ? url : 'assets/coache-avatar.png'" (click)="fileInput.click()" matTooltip="">
+            <div class="text-center mb-2"> <button (click)="fileInput.click()" mat-raised-button color="warn" class="profile">Upload Profile</button></div>
+
+            <input #fileInput type="file" #file (change)="onSelectFile($event.target.files)" style="visibility:hidden">
+
+        </div>
+
+    </div>
+    <div class="accordion-tab1" (click)="select()">
+
+        <label class="label" routerLink="/dashboard">
+      <i class="fa fa-dashboard icon" routerLink="/default"></i>
+      <span class="name">Dashboard</span>
+    </label>
+    </div>
+
+
+    <div class="accordion-tab1" (click)="select1()">
+
+        <label class="label" routerLink="/manage-staff">
+      <i class="fa fa-user-o icon" ></i>
+      <span class="name">Manage Staff</span>
+    </label>
+    </div>
+    <div class="accordion-tab1" (click)="select2()">
+
+        <label class="label" routerLink="/reg-details">
+      <i class="fa fa-book icon" ></i>
+      <span class="name">Register Details</span>
+    </label>
+    </div>
+
+    <div class="accordion-tab1" (click)="select3()">
+
+        <label class="label" routerLink="/profile">
+      <i class="fa fa-gear icon" ></i>
+      <span class="name">Profile Settings</span>
+    </label>
+    </div>
+    
+   
+   
+</div> -->
+
+
+<div class="container-fluid">
+
+    <ul class="mt-5">
+        <li *ngFor="let list of sidebar" routerLink="{{list.path}}" (click)="change(list.name)" [ngClass]=" list.name==sidemenu ? 'side' : '' "><i class="{{list.icon}} pr-2  "></i> {{list.name}}</li>
+        <!-- <li (click)="Dashboard()" [style.backgroundColor]="dashboardbg" [style.color]="dashbcolor"><i class="fa fa-dashboard pr-2"></i>Dashboard</li>
+      <li (click)="Services()" [style.backgroundColor]="serbg" [style.color]="serbcolor"><i class="fa fa-gear pr-2"></i>Services</li>
+      <li (click)="Appointment()" [style.backgroundColor]="appbg" [style.color]="appolor"><i class="fa fa-address-book pr-2"></i>appointments</li>
+      <li (click)="profile()" [style.backgroundColor]="probg" [style.color]="procolor"><i class="fa fa-user-o pr-2"></i>my profile</li> -->
+
+
+    </ul>
+
+</div>

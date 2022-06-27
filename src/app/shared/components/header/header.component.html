@@ -1,0 +1,54 @@
+<mat-toolbar style="       background-color: white !important;    box-shadow: #64646f33 0 7px 29px!important;
+">
+    <mat-toolbar-row>
+        <button mat-icon-button class="menu" (click)="toggleSideBar()">
+      <mat-icon>menu</mat-icon>
+     
+    </button>
+
+        <!-- <span class="m-0 pl-2 zsoon">Sufi's</span> -->
+        <!-- <span class="p-4" style="cursor: pointer;">
+    <i class="fa fa-window-maximize" (click)="openFullscreen()"></i>
+
+</span> -->
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <p class="text-white mt-3">{{name}}</p>
+            
+            <ul fxLayout="row" fxLayout="20px" class="m-2 p-1">
+
+                <li>
+                    <button mat-icon-button style="outline: none" matTooltip="Settings" routerLink="/profile">
+            <mat-icon class="rotate">settings</mat-icon>
+          </button>
+                </li>
+                <li>
+                    <!-- <button mat-icon-button style="outline: none" matTooltip="Get help">
+            <mat-icon class="help">help</mat-icon>
+          </button> -->
+                </li>
+                <li>
+                    <i class="fa fa-power-off pr-5 ml-auto   " (click)="toggle()" matTooltip="Click to logout" [style.Color]="Color"></i>
+
+                    <!-- <button mat-button [matMenuTriggerFor]="menu" class="person-button" class="person" matTooltip="User Profile">
+            <mat-icon>person_outline</mat-icon>
+          </button> -->
+                    <!-- <mat-menu #menu="matMenu">
+                        <button mat-menu-item class="account-button" routerLink="/profile">
+              <mat-icon color="primary">account_circle</mat-icon>
+              User profile
+            </button>
+                        <button mat-menu-item class="key-button" routerLink="/changepassword">
+              <mat-icon color="primary"> vpn_key</mat-icon>
+              Change Password
+            </button>
+                        <button mat-menu-item class="exit-button" (click)="signOut()">
+              <mat-icon color="primary">exit_to_app</mat-icon>
+              Sign Out
+            </button>
+                    </mat-menu> -->
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,203 @@
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="square-jelly-box"
+  [fullScreen]="true"
+>
+  <p style="color: white">Loading...</p>
+</ngx-spinner>
+<mat-card class="maincard mt-5">
+  <form>
+    <div class="row">
+      <div class="col-lg-3 col-sm-5 col-md-5">
+        <div>
+          <div class="div">
+            <img
+              class="url img-responsive"
+              [src]="
+                base64textString[0]
+                  ? base64textString[0]
+                  : 'assets/coache-avatar.png'
+              "
+              (click)="fileInput.click()"
+            />
+            <!-- <div class="text-center"> <button (click)="fileInput.click()" mat-raised-button color="warn" class="profile">Upload Profile</button></div> -->
+            <div class="text-center mb-2">
+              <button
+                (click)="fileInput.click()"
+                mat-raised-button
+                color="warn"
+                class="profile"
+              >
+                Upload Profile
+              </button>
+            </div>
+
+            <input
+              #fileInput
+              type="file"
+              #file
+              (change)="onSelectFile($event)"
+              style="visibility: hidden"
+            />
+            <!-- (change)="onUploadChange($event)" accept=".png, .jpg, .jpeg, .pdf" -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-5 col-sm-5">
+        <button
+          color="primary"
+          class="back"
+          mat-raised-button
+          routerLink="{{ routes }}"
+        >
+          Back
+        </button>
+      </div>
+    </div>
+    <!-- <h2>My profile Settings</h2> -->
+    <div class="row">
+      <!-- <hr class="w-100"> -->
+      <!-- <div class="col-md-3"> -->
+
+      <!-- <img src="../../../assets/final.png" class="img" width="50%" alt=""> -->
+
+      <!-- </div> -->
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>First Name</mat-label>
+            <input
+              matInput
+              placeholder="Edit  First Name"
+              type="text"
+              name="firstName"
+              [(ngModel)]="reg.firstName"
+              autocomplete="off"
+            /><i
+              class="fa fa-close"
+              *ngIf="reg.firstName"
+              (click)="cancelFirst()"
+            ></i>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input
+              matInput
+              placeholder="Edit   Last Name"
+              type="text"
+              name="lastName"
+              [(ngModel)]="reg.lastName"
+              autocomplete="off"
+            /><i
+              class="fa fa-close"
+              *ngIf="reg.lastName"
+              (click)="cancelLast()"
+            ></i>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <!-- <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Edit Password " type="text" name="password" [(ngModel)]="reg.password" />
+                    </mat-form-field>
+                </form> -->
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>User Name</mat-label>
+            <input
+              matInput
+              placeholder="Enter User Name"
+              name="username"
+              [(ngModel)]="reg.username"
+              type="text"
+              autocomplete="off"
+            /><i
+              class="fa fa-close"
+              *ngIf="reg.username"
+              (click)="cancelUser()"
+            ></i>
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Mail Address</mat-label>
+            <input
+              matInput
+              placeholder="Enter Mail Address"
+              name="email"
+              [(ngModel)]="reg.email"
+              type="text"
+              autocomplete="off"
+            />
+            <i class="fa fa-close" *ngIf="reg.email" (click)="cancelMail()"></i>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Contact No</mat-label>
+            <input
+              matInput
+              placeholder="Enter  Contact No"
+              name="mobile"
+              [(ngModel)]="reg.mobile"
+              type="text"
+              autocomplete="off"
+            />
+            <i
+              class="fa fa-close"
+              *ngIf="reg.mobile"
+              (click)="cancelNumber()"
+            ></i>
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <!-- <button color="primary" class="" mat-raised-button routerLink="{{routes}}">Back</button> -->
+
+        <button
+          mat-raised-button
+          color="primary"
+          class="btn2"
+          (click)="previous()"
+        >
+          Previous Details
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          class="btn2"
+          (click)="resetForm()"
+        >
+          Reset Form
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          class="btn2"
+          (click)="saveDetails(reg)"
+        >
+          Save Details
+        </button>
+      </div>
+    </div>
+  </form>
+</mat-card>
